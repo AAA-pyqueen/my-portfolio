@@ -1,0 +1,93 @@
+title: Aquesha A. Addison, RHIA
+email: aquesha.addison@outlook.com
+description: >- # this means to ignore newlines until "baseurl:"
+ My Portfolio
+github_username: AAA-pyqueen
+minimal_mistakes_skin: dark-mode
+search: true
+
+# Build settings
+markdown: kramdown
+remote_theme: daviddarnes/alembic@main
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+include:
+  - _pages
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-remote-theme
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+author:
+  name   : "Aquesha A Addison, RHIA"
+  avatar : "/assets/images/bio-photo.jpg"
+  bio    : "I have professional interests in Health Policy and Mental Health in military and underserved communities, and have spent the past 5 years exploring different facets of healthcare from direct patient care and care planning to more specialized fields such as Addictions and Infectious Diseases.I am a DIS contractor for the South Dakota Department of Health. I have a background in Healthcare and Case Management with long term goal of working as a Psychiatric Epidemiologist. I have professional interests in Health Policy and Mental Health in military and underserved communities, and have spent the past 5 years exploring different facets of healthcare from direct patient care and care planning to more specialized fields such as Addictions and Infectious Diseases."
+  links:
+    - label: "Credly"
+      icon: "fab fa-fw fa-credly"
+      url: "https://www.credly.com/users/aquesha-addison"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/AAA-pyqueen"
+    - label: "PTSD Project"
+      icon: "fab fa-fw fa-link"
+      url: "https://sites.google.com/view/ptsd-genomics/"
+    - label: "MEF2C Project"
+      icon: "fas fa-fw fa-link"
+      url: "aaa-pyqueen.github.io/MEF2C-Data/"
+    
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/AAA-pyqueen"
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
